@@ -26,7 +26,15 @@ map g<C-N> g<A-N>
 
 " Don't use Ex mode, use Q for formatting.
 map Q gq
+
+" Move caret next splitter
+map gmf <C-w>w
+
+" Move caret to match brace
+map g5 %
+
 nmap gi :action GotoImplementation<CR>
+nmap m :action ToggleBookmarkWithMnemonic<CR>
 
 nmap <leader><leader>s :action KJumpAction<cr>
 nmap <leader><leader>w :action KJumpAction.Word0<cr>
