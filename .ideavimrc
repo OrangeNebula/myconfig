@@ -30,12 +30,20 @@ map Q gq
 " Move caret next splitter
 map gmf <C-w>w
 
+" Move tab to opposite group
+" map gmt <C-S-A>g
+
 " Move caret to match brace
 map g5 %
+map g] %
 
+" Map go to implementation action
 nmap gi :action GotoImplementation<CR>
+
+" Map bookmark action
 nmap m :action ToggleBookmarkWithMnemonic<CR>
 
+" Config KJumpAction
 nmap <leader><leader>s :action KJumpAction<cr>
 nmap <leader><leader>w :action KJumpAction.Word0<cr>
 nmap <leader><leader>l :action KJumpAction.Line<cr>
@@ -52,3 +60,4 @@ nmap <leader><leader>l :action KJumpAction.Line<cr>
 
 
 " Find more examples here: https://jb.gg/share-ideavimrc
+" Intellij actionlist for vim: https://gist.github.com/zchee/9c78f91cc5ad771c1f5d
